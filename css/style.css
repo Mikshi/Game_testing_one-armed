@@ -45,3 +45,151 @@ body {
   padding: 0px 15px;
 }
 /* ----page---- */
+.menu-body__game-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.header-menu {
+  min-height: 100vh;
+  background-color: rgba(140, 138, 138, 0.9);
+  position: relative;
+}
+.menu-body__game{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.menu-body__game-list-item{
+  padding: 20px;
+  font-size: 35px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .menu-body__game-list-item{
+    font-size: 30px;
+    padding-bottom: 10vh;
+  }
+}
+.menu-body__game-list-item-link{
+  padding: 10px 20px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+.menu-body__game-list-item-link:hover{
+  border: 1px solid black;
+}
+.page__section-about{
+  min-height: 100vh;
+  background-color: rgba(67, 166, 110, 0.9);
+  position: relative;
+}
+.page__section-play{
+  min-height: 100vh;
+}
+.page__title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .page__title{
+    font-size: 22px;
+    padding-top: 40px;
+  }
+}
+
+.page__text {
+  padding: 0 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.page__text p{
+  margin-bottom: 15px;
+}
+
+/* ---play game--- */
+#container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#title {
+  font-size: 30px;
+  margin: 50px auto;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.dives {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.color {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  float: left;
+  border: solid black;
+}
+@media screen and (max-width: 768px) {
+  .color{
+    width: 70px;
+    height: 70px; 
+  }
+}
+#input {
+  margin: 5vh;
+}
+
+input {
+  background-color: rgba(173, 160, 160, 0.233);
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1em;
+  padding: 0.6em;
+  margin: 2vw;
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  input{
+    margin: 5vw;
+  }
+}
+
+button {
+  background-color: rgba(48, 41, 41, 0.904);
+  border-radius: 1em;
+  text-align: center;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  padding: 0.6em 3em;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgba(99, 86, 86, 0.904);
+}
+
+#stats {
+  text-transform: uppercase;
+  line-height: 300%;
+  font-size: 1.2em;
+}
+
+.result {
+  font-size: 2em;
+}
