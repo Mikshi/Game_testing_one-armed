@@ -143,6 +143,7 @@ body {
   margin: 10px;
   float: left;
   border: solid black;
+  transition: .8s;
 }
 @media screen and (max-width: 768px) {
   .color{
