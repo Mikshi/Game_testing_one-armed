@@ -10,6 +10,59 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <div class="wrapper">
+    <header class="header-menu">
+      <div class="container">
+        <div class="menu-body">
+          <nav class="menu-body__game">
+            <ul class="menu-body__game-list">
+              <li class="menu-body__game-list-item"><a href="#play" class="menu-body__game-list-item-link">Начать играть</a></li>
+              <li class="menu-body__game-list-item"><a href="#about" class="menu-body__game-list-item-link">Про игру</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__section-about" id="about">
+        <div class="container">
+          <h1 class="page__title">Про игру однорукий бандит</h1>
+          <div class="page__text">
+            <p>Для победы нужно собрать 3 разных цвета или 3 одинаковых цвета.</p>
+            <p>Победа утратвает вашу ставку.</p>
+            <p>Поражение вы теряете вашу ставку, игра заканчивается если ваши средства заканчиваются.</p>
+          </div>
+        </div>
+      </section>
+      <section class="page__section-play" id="play">
+        <div class="container">
+          <div id='container'>
+            <h2 id='title'>Однорукий бандит</h2>
+            <section class='dives'>
+              <div class='color'></div>
+              <div class='color'></div>
+              <div class='color'></div>
+            </section>
+            <div id='input'>
+              <input id='bid' type="number" placeholder="Введите свою ставку"></input>
+              <button id='start'>Играть!</button>
+            </div>
+        
+            <div id='stats'>
+        
+              <span class='result'></span>
+              <div></div>Ваши средства : <span class='wallet'> 0 </span></span>
+              <div>
+                Ты сыграл <span class='games'> 0 </span> игр <br>
+                <span class='wins'> 0 </span> Победы и
+                <span class='losses'> 0 </span> Поражение.
+              </div>
+        
+            </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
